@@ -32,6 +32,11 @@ export type OktaStrategyOptions = {
    * This should match one of the URLs defined under "Sign-in redirect URIs" under "Login".
    */
   callbackURL: string;
+  /**
+   * Optional parameter to provide an authorization ID for custom authorization servers.
+   * If left blank, would default to "default" authorization server.
+   */
+  authorizationId?: string;
 };
 
 export type OktaProfile = {
